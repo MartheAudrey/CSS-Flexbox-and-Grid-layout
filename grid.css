@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    max-height: 100vh;
+    min-height: 100vh;
+}
+main{
+    display: grid;
+    width: 80%;
+    margin: auto ;
+    place-items: center;
+}
+
+.boxes{
+    display: grid;
+    gap: 10px;
+    width: 100%;
+    margin: 5em;
+}
+
+.boxes .container1 {
+    display: grid;
+    grid-template-areas: "a a a b b";
+    gap: 10px;
+}
+
+.boxes .item{
+    height: 50vh;
+}
+
+
+.boxes .container1 .boxa{
+    grid-area: a;
+    background-color: rgb(240, 53, 6);
+}
+
+.boxes .container1 .boxb{
+    grid-area: b;
+    background-color: rgb(255, 145, 0);
+}
+
+.boxes .container2 {
+    display: grid;
+    grid-template-areas: "c d";
+    gap: 10px;
+    
+}
+
+.boxes .container2 .boxc{
+    grid-area: c;
+    background-color: rgb(8, 184, 8);
+}
+
+.boxes .container2 .boxd{
+    grid-area: d;
+    background-color: rgb(0, 140, 255);
+    height: 20vh;
+}
+
+.boxes .container2 .seperated{
+    gap: 10px;
+}
+
+.boxes .container2 .boxe{
+    grid-area: e;
+    background-color: rgb(0, 140, 255);
+    height: 28vh;
+    margin-top: 10px;
+}
+
+.flexbox-page{
+    margin: auto;
+    background-color: hsl(187, 84%, 40%);
+    border-color: hsl(187, 84%, 40%);
+    font-family: "Lexend Deca";
+    padding: 1em 2em;
+    align-items: center;
+    text-align: center;
+    border-radius: 30px;
+    
+}
+.flexbox-page:hover{
+    background-color:hsl(0, 0%, 95%);
+    border-color: hsl(187, 84%, 40%);
+    transition: 0.3s;
+}
+.flexbox-page a:hover{
+    color: hsl(187, 84%, 40%);
+    transition: 0.3s ease;
+}
+a{
+    text-decoration: none;
+    color: hsl(0, 0%, 95%);
+}

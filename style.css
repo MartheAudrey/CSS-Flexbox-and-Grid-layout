@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    background-color: hsl(0, 0%, 95%);
+    font-size: 15px;
+    max-height: 100vh;
+    min-height: 100vh;
+}
+
+main{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+.main .container{
+    width: 70%;
+    display: flex;  
+    justify-content: center; 
+    margin-top: 8em;
+}
+
+.main .container .column{
+    padding-top: 2em;
+    padding-left: 2em;
+    padding-right: 5em;
+    padding-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.main .container .column:first-child{
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0 0 10px;
+}
+
+.main .container .column:first-child button{
+    color: hsl(31, 77%, 52%);
+}
+
+.main .container .column:nth-child(2){
+    background-color: hsl(184, 100%, 22%);
+}
+
+.main .container .column:nth-child(2) button{
+    color: hsl(184, 100%, 22%);
+}
+
+.main .container .column:last-child{
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 10px 10px 0;
+}
+
+.main .container .column:last-child button{
+    color: hsl(179, 100%, 13%);
+}
+
+.main .container .column .image{
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+.main .container .column h3{
+    color: hsl(0, 0%, 95%);
+    font-family: "Big Shoulders Display", cursive;
+    margin-bottom: 3em;
+    
+}
+
+.main .container .column p{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: "Lexend Deca";
+    margin-bottom: 6em;
+}
+
+.main .container .column .bouton{
+    position: relative;
+}
+
+.main .container .column .bouton button{
+    border: none;
+    cursor: pointer;
+    background-color: hsl(0, 0%, 95%);
+    padding: 10px 30px;
+    border-radius: 25px;
+    font-family:"Lexend Deca";
+    
+}
+
+.main .container .column .bouton button:hover{
+    background-color: transparent;
+    border: 2px solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+}
+
+.main .grid-page button{
+    background-color: hsl(184, 67%, 41%);
+    cursor: pointer;
+    border: none;
+    margin-top: 2em;
+    font-family: "Lexend Deca";
+    padding: 1em 2em;
+    border-radius: 30px;
+}
+
+.main .grid-page button:hover{
+    background-color: transparent;
+    border: 2px solid hsl(184, 67%, 41%);
+    color: hsl(184, 67%, 41%);
+    
+}
+
+.main .grid-page a{
+    text-decoration: none;
+    color: hsl(0, 0%, 95%);
+}
+
+.main .grid-page a:hover{
+    color: hsl(184, 67%, 41%);
+}
+
+@media (max-width: 800px){
+    .main .container {
+        margin: 10% 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .main .container .column:first-child{
+        border-radius: 10px 10px 0 0;
+    } 
+    .main .container .column:last-child{
+        border-radius: 0 0 10px 10px;
+    } 
+}
+
